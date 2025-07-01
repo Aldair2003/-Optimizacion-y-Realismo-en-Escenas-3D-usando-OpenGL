@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escena 3D Interactiva - WebGL</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <h1>Escena 3D Interactiva</h1>
+      </div>
+      
+      <div class="canvas-container">
+        <canvas id="webgl-canvas"></canvas>
+      </div>
+      
+      <div id="controls">
+        <h3>Controles de Iluminación</h3>
+        <div class="button-group">
+          <button id="toggle-light1">Desactivar Luz 1</button>
+          <button id="toggle-light2">Desactivar Luz 2</button>
+        </div>
+        
+        <h3>Animaciones</h3>
+        <div class="button-group">
+          <button id="toggle-animation">Desactivar Animación</button>
+        </div>
+        
+        <div class="stats">
+          <h4>Estadísticas</h4>
+          <div class="stat-item">
+            <span class="stat-label">Objetos:</span>
+            <span class="stat-value">6</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Luces:</span>
+            <span class="stat-value">2</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Texturas:</span>
+            <span class="stat-value">6</span>
+          </div>
+        </div>
+        
+        <div id="info">
+          <h4>Controles de Navegación</h4>
+          <p><span class="key">WASD</span> Mover cámara</p>
+          <p><span class="key">Mouse</span> Rotar vista</p>
+          <p><span class="key">Click</span> Capturar cursor</p>
+          <p><span class="key">ESC</span> Liberar cursor</p>
+          <p><span class="key">Espacio</span> Subir</p>
+          <p><span class="key">Shift</span> Bajar</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
